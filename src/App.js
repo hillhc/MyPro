@@ -4,8 +4,12 @@ import Home from './pages/Home';
 import About from './pages/about';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import React, { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    document.title = "Hill's portfolio"; // Change the title of the page
+  }, []);
   return (
     <div className="App">
       <Router>

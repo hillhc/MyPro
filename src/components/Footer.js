@@ -18,7 +18,7 @@ function Footer() {
           <a href="https://github.com/hillhc">
             <GitHubIcon />
           </a>
-          <a href="mailto:hchoy@connect.ust.hk">
+          <a href="mailto:hchoy@hillchoy.com">
             <EmailIcon />
           </a>
         </div>

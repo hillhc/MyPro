@@ -33,7 +33,7 @@ function About() {
           </VerticalTimelineElement>
           <VerticalTimelineElement 
           className="vertical-timelinbe-element--education" 
-          date="2023 June - Present" 
+          date="2023 June - 2023 August" 
           iconStyle={{background: '#128308', color : "#fff"}} 
           icon={<SchoolIcon />}> 
           <h3 className="vertical-timeline-element-title">HKT - Fixed Net Operation, ISPC</h3>

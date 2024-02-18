@@ -30,8 +30,8 @@ function About() {
           date="2020 - Present" 
           iconStyle={{background: '#3e497a', color : "#fff"}} 
           icon={<SchoolIcon />}> 
-          <h3 className="vertical-timeline-element-title">The Hong Kong University of Science and Technology</h3>
-          <p>Bachelor Degree in Computer Engineering</p>
+          <h3 className="vertical-timeline-element-title">HKUST</h3>
+          <p>BEng in Computer Engineering</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement 
           className="vertical-timelinbe-element--education" 

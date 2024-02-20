@@ -45,12 +45,12 @@ function Home() {
             <span>Python, C, C++, MySQL</span>
           </li>
           <li className='listItem'>
-            <h2>Web Development (Learning) </h2>
-            <span>HTML, CSS, React, Javascript</span>
+            <h2>Machine Learning and AI</h2>
+            <span>Pytorch, Tensorflow and NLP related topics</span>
           </li>
           <li className='listItem'>
             <h2>Others</h2>
-            <span>Linux, Arduino, Raspberry Pi, STM32</span>
+            <span>Linux, Arduino, Raspberry Pi, STM32, LoRaWAN</span>
           </li>
         </ol>
       </div>

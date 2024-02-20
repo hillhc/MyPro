@@ -2,7 +2,7 @@ import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/about';
-import Project from './pages/Project.js';
+import Project from './pages/project';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import React, { useEffect } from 'react';

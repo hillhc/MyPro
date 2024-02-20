@@ -5,6 +5,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import WorkIcon from '@mui/icons-material/Work';
 import myResume from "../resource/resume.pdf"
+import myResume2 from "../resource/resume2.pdf"
 import backgroundabout from "../resource/backgroundabout.jpg"
 
 function About() {
@@ -60,7 +61,19 @@ function About() {
             cursor: 'pointer',
             display: 'block',
             margin: '0 auto'
-          }}>Download My Resume</button>
+          }}>Work Resume</button>
+        </a>
+        <a href={myResume2} download style={{textDecoration: 'none'}}>
+          <button style={{
+            backgroundColor: '#3e497a',
+            color: '#fff',
+            border: 'none',
+            padding: '10px 20px',
+            borderRadius: '5px',
+            cursor: 'pointer',
+            display: 'block',
+            margin: '0 auto'
+          }}>Academic Resume</button>
         </a>
       </div>
     </div>

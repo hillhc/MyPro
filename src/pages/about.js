@@ -60,7 +60,7 @@ function About() {
             borderRadius: '5px',
             cursor: 'pointer',
             display: 'block',
-            margin: '0 auto'
+            margin: '0 auto 10px' /* Add margin-bottom to create space */
           }}>Work Resume</button>
         </a>
         <a href={myResume2} download style={{textDecoration: 'none'}}>

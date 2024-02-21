@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 
-const Collapsible1 = () => {
+const Collapsible1 = (props) => {
   const [open, setOpen] = useState(false);
   const toggle = () => {
     setOpen(!open);
   };
-  const Collapsible = (props) => {}
+  
   return (
     <div>
       <button onClick={toggle}>toggle</button>
-      {open &&
+      {open && (
         <div className="toggle">{props.children}</div>
-      }
+      )}
     </div>
   );
 };

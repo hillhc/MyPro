@@ -5,7 +5,7 @@ import Collapsible1 from "../resource/project1"
 function Project() {
   return(
     <div className="Project">
-    <Collapsible/>
+    <Collapsible1/>
     </div>
   )
 }

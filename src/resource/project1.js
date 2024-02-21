@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
+import Button from '@material-ui/core/Button';
 
 const Collapsible1 = (props) => {
   const [open, setOpen] = useState(false);
+
   const toggle = () => {
     setOpen(!open);
   };
   
   return (
     <div>
-      <button onClick={toggle}>toggle</button>
+      <Button variant="contained" color="primary" onClick={toggle}>
+        FYP
+      </Button>
       {open && (
         <div className="toggle">{props.children}</div>
       )}

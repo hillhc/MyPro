@@ -5,14 +5,13 @@ const Collapsible1 = () => {
   const toggle = () => {
     setOpen(!open);
   };
+  const Collapsible = (props) => {}
   return (
     <div>
       <button onClick={toggle}>toggle</button>
-      {open && (
-        <div className="toggle">
-          <h4>toggle</h4>
-        </div>
-      )}
+      {open &&
+        <div className="toggle">{props.children}</div>
+      }
     </div>
   );
 };

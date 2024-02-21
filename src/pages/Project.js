@@ -1,6 +1,6 @@
 import React from "react";
-import "react-vertical-timeline-component/style.min.css";
 import backgroundabout from "../resource/backgroundabout.jpg"
+import Collapsible1 from "../resource/project1"
 
 function Project() {
   return(
@@ -11,6 +11,8 @@ function Project() {
       minHeight: '100vh'
     }}>
       <h1>To be Update !</h1>
+      <hr />
+      <Collapsible1/>
     </div>
   )
 }

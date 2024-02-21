@@ -11,7 +11,7 @@ const Collapsible1 = (props) => {
   return (
     <div>
       <Button variant="contained" color="primary" onClick={toggle}>
-        FYP
+        {open ? 'Close' : 'Expand'}
       </Button>
       {open && (
         <div className="toggle">{props.children}</div>

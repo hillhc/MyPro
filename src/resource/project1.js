@@ -10,7 +10,12 @@ const Collapsible1 = (props) => {
   
   return (
     <div>
-      <Button variant="contained" color="primary" onClick={toggle}>
+      <Button
+        variant="contained"
+        color="primary"
+        onClick={toggle}
+        style={{ marginLeft: '10px' }} // Add this line to shift the button to the right
+      >
         {open ? 'Close' : 'Expand'}
       </Button>
       {open && (

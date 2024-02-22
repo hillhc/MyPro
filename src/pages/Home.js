@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Typography } from '@mui/material';
-import Typewriter from 'react-typewriter-effect';
+import Typewriter from 'typewriter-effect'; // Import from 'typewriter-effect' instead of 'react-typewriter-effect'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -10,8 +10,15 @@ import "../styles/Home.css";
 import "../styles/about.css";
 
 function Home() {
+  const typewriterRef = useRef(null);
+
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to top on component mount
+    typewriterRef.current.typeString("Hi, I'm Hill. Welcome!")
+      .pauseFor(2000)
+      .deleteAll()
+      .typeString("Hi, I'm Hill. Welcome!")
+      .pauseFor(2000)
+      .start();
   }, []);
 
   return (
@@ -26,6 +33,9 @@ function Home() {
               strings: ["Hi, I'm Hill. Welcome!"],
               autoStart: true,
               loop: true,
+            }}
+            onInit={(typewriter) => {
+              typewriterRef.current = typewriter;
             }}
           />
         </h2>
@@ -45,30 +55,28 @@ function Home() {
           </a>
         </div>
       </div>
-      <div className="skills-list">
+      <div className="skills">
         <Typography variant="h4" component="h2">
           Skills
         </Typography>
-        <div className="skills-list">
-          <Typography variant="h5" component="h3">
-            Programming Languages
-          </Typography>
-          <Typography variant="body1" component="p">
-            Python, C, C++, MySQL
-          </Typography>
-          <Typography variant="h5" component="h3">
-            Machine Learning and AI
-          </Typography>
-          <Typography variant="body1" component="p">
-            Pytorch, Tensorflow and NLP related topics
-          </Typography>
-          <Typography variant="h5" component="h3">
-            Others
-          </Typography>
-          <Typography variant="body1" component="p">
-            Linux, Arduino, Raspberry Pi, STM32, LoRaWAN
-          </Typography>
-        </div>
+        <Typography variant="h5" component="h3">
+          Programming Languages
+        </Typography>
+        <Typography variant="body1" component="p">
+          Python, C, C++, MySQL
+        </Typography>
+        <Typography variant="h5" component="h3">
+          Machine Learning and AI
+        </Typography>
+        <Typography variant="body1" component="p">
+          Pytorch, Tensorflow and NLP related topics
+        </Typography>
+        <Typography variant="h5" component="h3">
+          Others
+        </Typography>
+        <Typography variant="body1" component="p">
+          Linux, Arduino, Raspberry Pi, STM32, LoRaWAN
+        </Typography>
       </div>
     </div>
   );

@@ -3,6 +3,9 @@ import { Link, useLocation } from 'react-router-dom';
 import { AppBar, Toolbar, IconButton, Drawer, List, ListItem, ListItemText, ListItemIcon } from '@mui/material';
 import { styled } from '@mui/system';
 import ReorderIcon from '@mui/icons-material/Reorder';
+import HomeIcon from '@mui/icons-material/Home';
+import InfoIcon from '@mui/icons-material/Info';
+import FolderIcon from '@mui/icons-material/Folder';
 
 const NavbarContainer = styled(AppBar)(({ theme }) => ({
   backgroundColor: '#223794',

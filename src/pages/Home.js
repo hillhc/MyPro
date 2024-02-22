@@ -7,27 +7,9 @@ import EmailIcon from '@mui/icons-material/Email';
 import myPhoto from "../resource/myPhoto.jpg";
 import "../styles/about.css";
 import backhome from "../resource/backhome.jpg";
-import Typewriter from 'typewriter-effect';
+import Typing from 'react-typing-animation';
 
 function Home() {
-  const typewriterRef = useRef(null);
-
-  const initializeTypewriter = () => {
-    typewriterRef.current = new Typewriter('#typewriter', {
-      strings: ["Hi, I'm Hill. Welcome!"],
-      autoStart: true,
-      loop: true,
-    });
-  };
-
-  useEffect(() => {
-    initializeTypewriter();
-
-    return () => {
-      typewriterRef.current.destroy(); // Cleanup typewriter on unmount
-    };
-  }, []);
-
   return (
     <div className="home">
       <div className="about">
@@ -35,7 +17,9 @@ function Home() {
           <img src={myPhoto} alt="myPhoto" />
         </div>
         <h2>
-          <span id="typewriter"></span>
+          <Typing>
+            <span>Hi, I'm Hill. Welcome!</span>
+          </Typing>
         </h2>
         <div className="prompt">
           <p>I am a year 4 Computer Engineering student currently studying at HKUST</p>
@@ -53,15 +37,12 @@ function Home() {
           </a>
         </div>
       </div>
-      <div
-        className="skills"
-        style={{
-          backgroundImage: `url(${backhome})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center center',
-          minHeight: '100vh',
-        }}
-      >
+      <div className="skills" style={{
+        backgroundImage: `url(${backhome})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        minHeight: '100vh'
+      }}>
         <h1>Skills</h1>
         <ul className="list">
           <li className="listItem">

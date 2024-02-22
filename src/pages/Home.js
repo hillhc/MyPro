@@ -55,29 +55,6 @@ function Home() {
           </a>
         </div>
       </div>
-      <div className="skills">
-        <Typography variant="h4" component="h2">
-          Skills
-        </Typography>
-        <Typography variant="h5" component="h3">
-          Programming Languages
-        </Typography>
-        <Typography variant="body1" component="p">
-          Python, C, C++, MySQL
-        </Typography>
-        <Typography variant="h5" component="h3">
-          Machine Learning and AI
-        </Typography>
-        <Typography variant="body1" component="p">
-          Pytorch, Tensorflow and NLP related topics
-        </Typography>
-        <Typography variant="h5" component="h3">
-          Others
-        </Typography>
-        <Typography variant="body1" component="p">
-          Linux, Arduino, Raspberry Pi, STM32, LoRaWAN
-        </Typography>
-      </div>
     </div>
   );
 }

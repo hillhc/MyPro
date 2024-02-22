@@ -10,6 +10,7 @@ function Project() {
       <hr />
       <Collapsible1 label="Final Year Project">
         <p>
+          The project under the supervision of Prof. Gary Shueng Han CHAN to design a smart car park system.
           The project involves the use of the latest object detection model, YOLOv8, with MobileNetV3 backbone structure, to design and train a
           model capable of detecting the presence of vehicles in parking spaces. This model can be deployed on the edge devices with limited
           computational power (Raspberry Pi) to capture and determine if a parking slot is empty or occupied.

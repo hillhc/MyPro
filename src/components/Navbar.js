@@ -11,15 +11,18 @@ const NavbarContainer = styled(AppBar)(({ theme }) => ({
   backgroundColor: '#223794',
 }));
 
-const LinksContainer = styled('div')(({ theme }) => ({
-  display: 'flex',
-  justifyContent: 'flex-start',
-  marginLeft: 'auto',
+const ListItemTextStyled = styled(ListItemText)(({ theme }) => ({
+  color: 'black',
+  textDecoration: 'none',
 }));
 
-const ListItemTextStyled = styled(ListItemText)(({ theme }) => ({
-  color: 'white',
-  textDecoration: 'none',
+const SideListContainer = styled(List)(({ theme }) => ({
+  backgroundColor: '#223794',
+  width: '200px',
+}));
+
+const BlackListItemIcon = styled(ListItemIcon)(({ theme }) => ({
+  color: 'black',
 }));
 
 function Navbar() {
@@ -37,38 +40,27 @@ function Navbar() {
           <ReorderIcon sx={{ color: 'white' }} />
         </IconButton>
         <Drawer anchor="left" open={expand} onClose={() => setExpand(false)}>
-          <List>
+          <SideListContainer>
             <ListItem button component={Link} to="/">
-              <ListItemIcon>
-                <HomeIcon sx={{ color: 'white' }} />
-              </ListItemIcon>
+              <BlackListItemIcon>
+                <HomeIcon />
+              </BlackListItemIcon>
               <ListItemTextStyled primary="Home" />
             </ListItem>
             <ListItem button component={Link} to="/about">
-              <ListItemIcon>
-                <InfoIcon sx={{ color: 'white' }} />
-              </ListItemIcon>
+              <BlackListItemIcon>
+                <InfoIcon />
+              </BlackListItemIcon>
               <ListItemTextStyled primary="About Me" />
             </ListItem>
             <ListItem button component={Link} to="/project">
-              <ListItemIcon>
-                <FolderIcon sx={{ color: 'white' }} />
-              </ListItemIcon>
+              <BlackListItemIcon>
+                <FolderIcon />
+              </BlackListItemIcon>
               <ListItemTextStyled primary="My Project" />
             </ListItem>
-          </List>
+          </SideListContainer>
         </Drawer>
-        <LinksContainer>
-          <Link to="/" component={ListItemTextStyled}>
-            Home
-          </Link>
-          <Link to="/about" component={ListItemTextStyled}>
-            About Me
-          </Link>
-          <Link to="/project" component={ListItemTextStyled}>
-            My Project
-          </Link>
-        </LinksContainer>
       </Toolbar>
     </NavbarContainer>
   );

@@ -12,12 +12,20 @@ import Typewriter from 'typewriter-effect';
 function Home() {
   const typewriterRef = useRef(null);
 
-  useEffect(() => {
+  const initializeTypewriter = () => {
     typewriterRef.current = new Typewriter('#typewriter', {
       strings: ["Hi, I'm Hill. Welcome!"],
       autoStart: true,
       loop: true,
     });
+  };
+
+  useEffect(() => {
+    initializeTypewriter();
+
+    return () => {
+      typewriterRef.current.destroy(); // Cleanup typewriter on unmount
+    };
   }, []);
 
   return (
@@ -45,12 +53,15 @@ function Home() {
           </a>
         </div>
       </div>
-      <div className="skills" style={{
-        backgroundImage: `url(${backhome})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center',
-        minHeight: '100vh'
-      }}>
+      <div
+        className="skills"
+        style={{
+          backgroundImage: `url(${backhome})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center center',
+          minHeight: '100vh',
+        }}
+      >
         <h1>Skills</h1>
         <ul className="list">
           <li className="listItem">

@@ -7,13 +7,6 @@ function Project() {
   return (
     <div className="Project">
       <Card>
-        <CardMedia
-          component="img"
-          src={projectImage}
-          alt="Project Image"
-          height="200"
-          style={{ objectFit: "cover" }}
-        />
         <CardContent>
           <Typography variant="h4" component="div">
             Project List
@@ -38,6 +31,8 @@ function Project() {
                 The project also involves the design and building of a backend system structure and the use of LoRaWAN technology to transmit parking space availability information to
                 the backend, which can then be used to inform drivers of available parking spaces.
                 <br /><br />
+                <img src={projectImage} alt="Project Image" style={{ width: "100%", maxHeight: "200px", objectFit: "cover" }} />
+                <br /><br />
                 The project is currently in the development stage. More details about the project can be found at: 
                 <a href="http://eek123.ust.hk/SmartCarpark" style={{ textDecoration: "none", color: "blue" }}>http://eek123.ust.hk/SmartCarpark</a>
               </Typography>
@@ -49,5 +44,6 @@ function Project() {
     </div>
   );
 }
+
 
 export default Project;

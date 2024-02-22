@@ -7,7 +7,6 @@ import EmailIcon from '@mui/icons-material/Email';
 import myPhoto from "../resource/myPhoto.jpg";
 import "../styles/about.css";
 import backhome from "../resource/backhome.jpg";
-import Typewriter from 'typewriter-effect/dist/core';
 
 function Home() {
   return (
@@ -16,20 +15,7 @@ function Home() {
         <div className="photo">
           <img src={myPhoto} alt="myPhoto" />
         </div>
-        <Typewriter
-          onInit={(typewriter) => {
-            typewriter.typeString("Hi, I'm Hill. Welcome !")
-              .callFunction(() => {
-                console.log('String typed out!');
-              })
-              .pauseFor(2500)
-              .deleteAll()
-              .callFunction(() => {
-                console.log('All strings were deleted');
-              })
-              .start();
-          }}
-        />
+        <h2>Hi, I'm Hill. Welcome !</h2>
         <div className="prompt">
           <p>I am a yaer 4 Computer Engineering student currently studenting at HKUST</p>
           <a href="https://www.instagram.com/hill__hc/">

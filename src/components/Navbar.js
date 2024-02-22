@@ -8,7 +8,7 @@ import InfoIcon from '@mui/icons-material/Info';
 import FolderIcon from '@mui/icons-material/Folder';
 
 const NavbarContainer = styled(AppBar)(({ theme }) => ({
-  backgroundColor: '#223794',
+  backgroundColor: '#white',
 }));
 
 const ListItemTextStyled = styled(ListItemText)(({ theme }) => ({

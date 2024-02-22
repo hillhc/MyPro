@@ -10,15 +10,15 @@ import backhome from "../resource/backhome.jpg";
 
 function Home() {
   const [text, setText] = useState('');
-  const introText = "I am a year 4 Computer Engineering student currently studying at HKUST";
+  const greetingText = "Hi, I'm Hill. Welcome!";
 
   useEffect(() => {
     let currentIndex = 0;
     const timer = setInterval(() => {
-      if (currentIndex === introText.length) {
+      if (currentIndex === greetingText.length) {
         clearInterval(timer);
       }
-      setText(introText.substring(0, currentIndex + 1));
+      setText(greetingText.substring(0, currentIndex + 1));
       currentIndex++;
     }, 100);
 
@@ -33,9 +33,9 @@ function Home() {
         <div className="photo">
           <img src={myPhoto} alt="myPhoto" />
         </div>
-        <h2>Hi, I'm Hill. Welcome!</h2>
+        <h2>{text}</h2>
         <div className="prompt">
-          <p>{text}</p>
+          <p>I am a year 4 Computer Engineering student currently studying at HKUST</p>
           <a href="https://www.instagram.com/hill__hc/">
             <InstagramIcon />
           </a>

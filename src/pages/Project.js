@@ -2,11 +2,12 @@ import React from "react";
 import { Card, CardContent, CardMedia, Typography, Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import projectImage from "../resource/result3.jpg";
+import "../styles/Project.css";
 
 function Project() {
   return (
     <div className="Project">
-      <Card>
+      <Card className="projectCard">
         <CardContent>
           <Typography variant="h4" component="div">
             Project List
@@ -44,6 +45,5 @@ function Project() {
     </div>
   );
 }
-
 
 export default Project;

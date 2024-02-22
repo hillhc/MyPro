@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: center;
   color: white;
+  text-align: center; /* Add this line to center align the text */
 }
 
 .navbar a {

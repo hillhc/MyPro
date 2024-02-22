@@ -1,46 +1,23 @@
-import React, { useEffect, useRef } from 'react';
-import { Typography } from '@mui/material';
-import Typewriter from 'typewriter-effect'; // Import from 'typewriter-effect' instead of 'react-typewriter-effect'
+import React from 'react'
+import "../styles/Home.css"
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import myPhoto from "../resource/myPhoto.jpg";
-import "../styles/Home.css";
 import "../styles/about.css";
+import backhome from "../resource/backhome.jpg";
 
 function Home() {
-  const typewriterRef = useRef(null);
-
-  useEffect(() => {
-    typewriterRef.current.typeString("Hi, I'm Hill. Welcome!")
-      .pauseFor(2000)
-      .deleteAll()
-      .typeString("Hi, I'm Hill. Welcome!")
-      .pauseFor(2000)
-      .start();
-  }, []);
-
   return (
     <div className="home">
       <div className="about">
         <div className="photo">
           <img src={myPhoto} alt="myPhoto" />
         </div>
-        <h2>
-          <Typewriter
-            options={{
-              strings: ["Hi, I'm Hill. Welcome!"],
-              autoStart: true,
-              loop: true,
-            }}
-            onInit={(typewriter) => {
-              typewriterRef.current = typewriter;
-            }}
-          />
-        </h2>
+        <h2>Hi, I'm Hill. Welcome !</h2>
         <div className="prompt">
-          <p>I am a year 4 Computer Engineering student currently studying at HKUST</p>
+          <p>I am a yaer 4 Computer Engineering student currently studenting at HKUST</p>
           <a href="https://www.instagram.com/hill__hc/">
             <InstagramIcon />
           </a>
@@ -55,8 +32,30 @@ function Home() {
           </a>
         </div>
       </div>
+      <div className="skills" style={{
+        backgroundImage: `url(${backhome})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        minHeight: '100vh'
+      }}>
+        <h1> Skills</h1>
+        <ol className='list'>
+          <li className='listItem'>
+            <h2>Programming Languages</h2>
+            <span>Python, C, C++, MySQL</span>
+          </li>
+          <li className='listItem'>
+            <h2>Machine Learning and AI</h2>
+            <span>Pytorch, Tensorflow and NLP related topics</span>
+          </li>
+          <li className='listItem'>
+            <h2>Others</h2>
+            <span>Linux, Arduino, Raspberry Pi, STM32, LoRaWAN</span>
+          </li>
+        </ol>
+      </div>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home

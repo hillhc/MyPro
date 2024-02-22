@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #a6a4a4;
+  background-color: #ddd5d5;
   color: #f0f0f0;
 }
 
@@ -31,7 +31,7 @@
 .prompt svg {
   font-size: 60px;
   margin: 5px;
-  color: white;
+  color: #f6f6f6;
 }
 
 .skills {

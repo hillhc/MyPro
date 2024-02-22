@@ -12,7 +12,7 @@ function About() {
   return(
     <div className="About" style={{
       backgroundImage: `url(${backgroundabout})`,
-      backgroundSize: 'cover',
+      backgroundSize: '100% 100%',
       backgroundPosition: 'center center',
       minHeight: '100vh'
     }}>

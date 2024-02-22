@@ -14,7 +14,7 @@ function About() {
       backgroundImage: `url(${backgroundabout})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
-      minHeight: '200vh'
+      minHeight: '100vh'
     }}>
       <div className="Experience">
         <VerticalTimeline lineColor='#3e497a'>

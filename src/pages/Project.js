@@ -23,16 +23,16 @@ function Project() {
                 </Typography>
               </div>
             </AccordionSummary>
-            <AccordionDetails>
-              <Typography variant="body1" style={{ textAlign: "justify", fontSize: "1.2rem" }}>
+            <AccordionDetails style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+              <Typography variant="body1" style={{ textAlign: "justify", fontSize: "1.2rem", marginBottom: "1rem" }}>
                 The project involves the use of the latest object detection model, YOLOv8, with MobileNetV3 backbone structure, to design and train a
                 model capable of detecting the presence of vehicles in parking spaces. This model can be deployed on edge devices with limited
                 computational power (Raspberry Pi) to capture and determine if a parking slot is empty or occupied.
                 The project also involves the design and building of a backend system structure and the use of LoRaWAN technology to transmit parking space availability information to
                 the backend, which can then be used to inform drivers of available parking spaces.
-                <br /><br />
-                <img src={projectImage} alt="Project Image" style={{ width: "100%", maxHeight: "200px", objectFit: "cover" }} />
-                <br /><br />
+              </Typography>
+              <img src={projectImage} alt="Project Image" style={{ width: "50%", height: "auto", objectFit: "cover", marginBottom: "1rem" }} />
+              <Typography variant="body1" style={{ textAlign: "justify", fontSize: "1.2rem", marginBottom: "1rem" }}>
                 The project is currently in the development stage. More details about the project can be found at: 
                 <a href="http://eek123.ust.hk/SmartCarpark" style={{ textDecoration: "none", color: "blue" }}>http://eek123.ust.hk/SmartCarpark</a>
               </Typography>

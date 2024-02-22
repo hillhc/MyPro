@@ -7,7 +7,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import myPhoto from "../resource/myPhoto.jpg";
 import "../styles/about.css";
 import backhome from "../resource/backhome.jpg";
-import Typed from 'react-typed';
+import { Typed } from 'react-typed';
 
 function Home() {
   return (

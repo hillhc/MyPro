@@ -1,11 +1,12 @@
 import React from 'react';
-import { Card, CardContent, Typography } from '@mui/material';
-import "../styles/Home.css";
+import { Typography } from '@mui/material';
+import Typewriter from 'react-typewriter-effect';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import myPhoto from "../resource/myPhoto.jpg";
+import "../styles/Home.css";
 import "../styles/about.css";
 
 function Home() {
@@ -15,7 +16,15 @@ function Home() {
         <div className="photo">
           <img src={myPhoto} alt="myPhoto" />
         </div>
-        <h2>Hi, I'm Hill. Welcome!</h2>
+        <h2>
+          <Typewriter
+            options={{
+              strings: ["Hi, I'm Hill. Welcome!"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </h2>
         <div className="prompt">
           <p>I am a year 4 Computer Engineering student currently studying at HKUST</p>
           <a href="https://www.instagram.com/hill__hc/">
@@ -32,38 +41,28 @@ function Home() {
           </a>
         </div>
       </div>
-      <h1>Skills</h1>
       <div className="skills">
-        <Card className="skillCard" sx={{ border: '1px solid black' }}>
-          <CardContent>
-            <Typography variant="h5" component="h2">
-              Programming Languages
-            </Typography>
-            <Typography variant="body2" component="p">
-              Python, C, C++, MySQL
-            </Typography>
-          </CardContent>
-        </Card>
-        <Card className="skillCard" sx={{ border: '1px solid black' }}>
-          <CardContent>
-            <Typography variant="h5" component="h2">
-              Machine Learning and AI
-            </Typography>
-            <Typography variant="body2" component="p">
-              Pytorch, Tensorflow and NLP related topics
-            </Typography>
-          </CardContent>
-        </Card>
-        <Card className="skillCard" sx={{ border: '1px solid black' }}>
-          <CardContent>
-            <Typography variant="h5" component="h2">
-              Others
-            </Typography>
-            <Typography variant="body2" component="p">
-              Linux, Arduino, Raspberry Pi, STM32, LoRaWAN
-            </Typography>
-          </CardContent>
-        </Card>
+        <Typography variant="h4" component="h2">
+          Skills
+        </Typography>
+        <Typography variant="h5" component="h3">
+          Programming Languages
+        </Typography>
+        <Typography variant="body1" component="p">
+          Python, C, C++, MySQL
+        </Typography>
+        <Typography variant="h5" component="h3">
+          Machine Learning and AI
+        </Typography>
+        <Typography variant="body1" component="p">
+          Pytorch, Tensorflow and NLP related topics
+        </Typography>
+        <Typography variant="h5" component="h3">
+          Others
+        </Typography>
+        <Typography variant="body1" component="p">
+          Linux, Arduino, Raspberry Pi, STM32, LoRaWAN
+        </Typography>
       </div>
     </div>
   );

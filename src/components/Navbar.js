@@ -17,7 +17,7 @@ const ListItemTextStyled = styled(ListItemText)(({ theme }) => ({
 }));
 
 const SideListContainer = styled(List)(({ theme }) => ({
-  backgroundColor: '#223794',
+  backgroundColor: '#white',
   width: '200px',
 }));
 

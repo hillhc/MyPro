@@ -1,5 +1,6 @@
-import React from 'react'
-import "../styles/Home.css"
+import React from 'react';
+import { Card, CardContent, Typography } from '@mui/material';
+import "../styles/Home.css";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -15,9 +16,9 @@ function Home() {
         <div className="photo">
           <img src={myPhoto} alt="myPhoto" />
         </div>
-        <h2>Hi, I'm Hill. Welcome !</h2>
+        <h2>Hi, I'm Hill. Welcome!</h2>
         <div className="prompt">
-          <p>I am a yaer 4 Computer Engineering student currently studenting at HKUST</p>
+          <p>I am a year 4 Computer Engineering student currently studying at HKUST</p>
           <a href="https://www.instagram.com/hill__hc/">
             <InstagramIcon />
           </a>
@@ -32,23 +33,41 @@ function Home() {
           </a>
         </div>
       </div>
-      <h1> Skills</h1>
-      <ol className='list'>
-        <li className='listItem'>
-          <h2>Programming Languages</h2>
-          <span>Python, C, C++, MySQL</span>
-        </li>
-        <li className='listItem'>
-          <h2>Machine Learning and AI</h2>
-          <span>Pytorch, Tensorflow and NLP related topics</span>
-        </li>
-        <li className='listItem'>
-          <h2>Others</h2>
-          <span>Linux, Arduino, Raspberry Pi, STM32, LoRaWAN</span>
-        </li>
-      </ol>
+      <h1>Skills</h1>
+      <div className="skills">
+        <Card className="skillCard" sx={{ border: '1px solid black' }}>
+          <CardContent>
+            <Typography variant="h5" component="h2">
+              Programming Languages
+            </Typography>
+            <Typography variant="body2" component="p">
+              Python, C, C++, MySQL
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card className="skillCard" sx={{ border: '1px solid black' }}>
+          <CardContent>
+            <Typography variant="h5" component="h2">
+              Machine Learning and AI
+            </Typography>
+            <Typography variant="body2" component="p">
+              Pytorch, Tensorflow and NLP related topics
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card className="skillCard" sx={{ border: '1px solid black' }}>
+          <CardContent>
+            <Typography variant="h5" component="h2">
+              Others
+            </Typography>
+            <Typography variant="body2" component="p">
+              Linux, Arduino, Raspberry Pi, STM32, LoRaWAN
+            </Typography>
+          </CardContent>
+        </Card>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

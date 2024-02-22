@@ -22,10 +22,6 @@ const ListItemTextStyled = styled(ListItemText)(({ theme }) => ({
   textDecoration: 'none',
 }));
 
-const ListItemIconStyled = styled(ListItemIcon)(({ theme }) => ({
-  color: 'white',
-}));
-
 function Navbar() {
   const [expand, setExpand] = useState(false);
   const location = useLocation();
@@ -43,21 +39,21 @@ function Navbar() {
         <Drawer anchor="left" open={expand} onClose={() => setExpand(false)}>
           <List>
             <ListItem button component={Link} to="/">
-              <ListItemIconStyled>
-                <HomeIcon />
-              </ListItemIconStyled>
+              <ListItemIcon>
+                <HomeIcon sx={{ color: 'white' }} />
+              </ListItemIcon>
               <ListItemTextStyled primary="Home" />
             </ListItem>
             <ListItem button component={Link} to="/about">
-              <ListItemIconStyled>
-                <InfoIcon />
-              </ListItemIconStyled>
+              <ListItemIcon>
+                <InfoIcon sx={{ color: 'white' }} />
+              </ListItemIcon>
               <ListItemTextStyled primary="About Me" />
             </ListItem>
             <ListItem button component={Link} to="/project">
-              <ListItemIconStyled>
-                <FolderIcon />
-              </ListItemIconStyled>
+              <ListItemIcon>
+                <FolderIcon sx={{ color: 'white' }} />
+              </ListItemIcon>
               <ListItemTextStyled primary="My Project" />
             </ListItem>
           </List>

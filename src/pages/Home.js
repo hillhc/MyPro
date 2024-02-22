@@ -1,5 +1,5 @@
-import React from 'react'
-import "../styles/Home.css"
+import React, { useState, useEffect } from 'react';
+import "../styles/Home.css";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -9,15 +9,33 @@ import "../styles/about.css";
 import backhome from "../resource/backhome.jpg";
 
 function Home() {
+  const [text, setText] = useState('');
+  const introText = "I am a year 4 Computer Engineering student currently studying at HKUST";
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const timer = setInterval(() => {
+      if (currentIndex === introText.length) {
+        clearInterval(timer);
+      }
+      setText(introText.substring(0, currentIndex + 1));
+      currentIndex++;
+    }, 100);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
   return (
     <div className="home">
       <div className="about">
         <div className="photo">
           <img src={myPhoto} alt="myPhoto" />
         </div>
-        <h2>Hi, I'm Hill. Welcome !</h2>
+        <h2>Hi, I'm Hill. Welcome!</h2>
         <div className="prompt">
-          <p>I am a yaer 4 Computer Engineering student currently studenting at HKUST</p>
+          <p>{text}</p>
           <a href="https://www.instagram.com/hill__hc/">
             <InstagramIcon />
           </a>
@@ -32,13 +50,16 @@ function Home() {
           </a>
         </div>
       </div>
-      <div className="skills" style={{
-        backgroundImage: `url(${backhome})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center',
-        minHeight: '100vh'
-      }}>
-        <h1> Skills</h1>
+      <div
+        className="skills"
+        style={{
+          backgroundImage: `url(${backhome})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center center',
+          minHeight: '100vh'
+        }}
+      >
+        <h1>Skills</h1>
         <ol className='list'>
           <li className='listItem'>
             <h2>Programming Languages</h2>
@@ -55,7 +76,7 @@ function Home() {
         </ol>
       </div>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

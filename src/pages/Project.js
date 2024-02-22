@@ -1,11 +1,19 @@
 import React from "react";
-import { Card, CardContent, Typography, Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
+import { Card, CardContent, CardMedia, Typography, Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import projectImage from "../src/resource/result3.jpg";
 
 function Project() {
   return (
     <div className="Project">
       <Card>
+        <CardMedia
+          component="img"
+          src={projectImage}
+          alt="Project Image"
+          height="200"
+          style={{ objectFit: "cover" }}
+        />
         <CardContent>
           <Typography variant="h4" component="div">
             Project List
@@ -14,13 +22,16 @@ function Project() {
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <div>
-                <Typography variant="subtitle1">Final Year Project - Advanced Video Analytics and Edge AI for Smart Carpark Systems (2023-2024)</Typography>
-                <Typography variant="subtitle2">Supervised by Dr. Gary Shueng Han CHAN</Typography>
+                <Typography variant="subtitle1" sx={{ fontSize: "1.5rem" }}>
+                  Final Year Project - Advanced Video Analytics and Edge AI for Smart Carpark Systems (2023-2024)
+                </Typography>
+                <Typography variant="subtitle2" sx={{ fontSize: "1.2rem" }}>
+                  Supervised by Dr. Gary Shueng Han CHAN
+                </Typography>
               </div>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography variant="body1" style={{ textAlign: "justify" }}>
-                The project under the supervision of Prof. Gary Shueng Han CHAN aims to design a smart car park system.
+              <Typography variant="body1" style={{ textAlign: "justify", fontSize: "1.2rem" }}>
                 The project involves the use of the latest object detection model, YOLOv8, with MobileNetV3 backbone structure, to design and train a
                 model capable of detecting the presence of vehicles in parking spaces. This model can be deployed on edge devices with limited
                 computational power (Raspberry Pi) to capture and determine if a parking slot is empty or occupied.

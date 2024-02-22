@@ -18,7 +18,7 @@
 
 .About {
   flex: 1;
-  background-image: url(${backgroundabout});
+  background-image: url("../src/resource/backgroundabout.jpg");
   background-size: cover;
   background-position: center center;
   display: flex;

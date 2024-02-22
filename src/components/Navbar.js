@@ -1,77 +1,77 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { AppBar, Toolbar, IconButton, Drawer, List, ListItem, ListItemText, ListItemIcon } from '@mui/material';
-import { makeStyles } from '@mui/styles';
+import { styled } from '@mui/system';
 import ReorderIcon from '@mui/icons-material/Reorder';
 
-const useStyles = makeStyles((theme) => ({
-  navbar: {
-    backgroundColor: '#223794',
-  },
-  links: {
-    display: 'flex',
-    justifyContent: 'flex-start',
-    marginLeft: 'auto',
-  },
-  listItemText: {
-    color: 'white',
-    textDecoration: 'none',
-  },
-  listItemIcon: {
-    color: 'white',
-  },
+const NavbarContainer = styled(AppBar)(({ theme }) => ({
+  backgroundColor: '#223794',
+}));
+
+const LinksContainer = styled('div')(({ theme }) => ({
+  display: 'flex',
+  justifyContent: 'flex-start',
+  marginLeft: 'auto',
+}));
+
+const ListItemTextStyled = styled(ListItemText)(({ theme }) => ({
+  color: 'white',
+  textDecoration: 'none',
+}));
+
+const ListItemIconStyled = styled(ListItemIcon)(({ theme }) => ({
+  color: 'white',
 }));
 
 function Navbar() {
   const [expand, setExpand] = useState(false);
   const location = useLocation();
-  const classes = useStyles();
 
   useEffect(() => {
     setExpand(false);
   }, [location]);
 
   return (
-    <AppBar position="static" className={classes.navbar}>
+    <NavbarContainer position="static">
       <Toolbar>
         <IconButton onClick={() => setExpand((prev) => !prev)}>
-          <ReorderIcon className={classes.listItemIcon} />
+          <ReorderIcon sx={{ color: 'white' }} />
         </IconButton>
         <Drawer anchor="left" open={expand} onClose={() => setExpand(false)}>
           <List>
             <ListItem button component={Link} to="/">
-              <ListItemIcon className={classes.listItemIcon}>
+              <ListItemIconStyled>
                 <HomeIcon />
-              </ListItemIcon>
-              <ListItemText primary="Home" className={classes.listItemText} />
+              </ListItemIconStyled>
+              <ListItemTextStyled primary="Home" />
             </ListItem>
             <ListItem button component={Link} to="/about">
-              <ListItemIcon className={classes.listItemIcon}>
+              <ListItemIconStyled>
                 <InfoIcon />
-              </ListItemIcon>
-              <ListItemText primary="About Me" className={classes.listItemText} />
+              </ListItemIconStyled>
+              <ListItemTextStyled primary="About Me" />
             </ListItem>
             <ListItem button component={Link} to="/project">
-              <ListItemIcon className={classes.listItemIcon}>
+              <ListItemIconStyled>
                 <FolderIcon />
-              </ListItemIcon>
-              <ListItemText primary="My Project" className={classes.listItemText} />
+              </ListItemIconStyled>
+              <ListItemTextStyled primary="My Project" />
             </ListItem>
           </List>
         </Drawer>
-        <div className={classes.links}>
-          <Link to="/" className={classes.listItemText}>
+        <LinksContainer>
+          <Link to="/" component={ListItemTextStyled}>
             Home
           </Link>
-          <Link to="/about" className={classes.listItemText}>
+          <Link to="/about" component={ListItemTextStyled}>
             About Me
           </Link>
-          <Link to="/project" className={classes.listItemText}>
+          <Link to="/project" component={ListItemTextStyled}>
             My Project
           </Link>
-        </div>
+        </LinksContainer>
       </Toolbar>
-    </AppBar>
+    </NavbarContainer>
   );
 }
 

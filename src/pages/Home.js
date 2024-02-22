@@ -32,28 +32,21 @@ function Home() {
           </a>
         </div>
       </div>
-      <div className="skills" style={{
-        backgroundImage: `url(${backhome})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center',
-        minHeight: '100vh'
-      }}>
-        <h1> Skills</h1>
-        <ol className='list'>
-          <li className='listItem'>
-            <h2>Programming Languages</h2>
-            <span>Python, C, C++, MySQL</span>
-          </li>
-          <li className='listItem'>
-            <h2>Machine Learning and AI</h2>
-            <span>Pytorch, Tensorflow and NLP related topics</span>
-          </li>
-          <li className='listItem'>
-            <h2>Others</h2>
-            <span>Linux, Arduino, Raspberry Pi, STM32, LoRaWAN</span>
-          </li>
-        </ol>
-      </div>
+      <h1> Skills</h1>
+      <ol className='list'>
+        <li className='listItem'>
+          <h2>Programming Languages</h2>
+          <span>Python, C, C++, MySQL</span>
+        </li>
+        <li className='listItem'>
+          <h2>Machine Learning and AI</h2>
+          <span>Pytorch, Tensorflow and NLP related topics</span>
+        </li>
+        <li className='listItem'>
+          <h2>Others</h2>
+          <span>Linux, Arduino, Raspberry Pi, STM32, LoRaWAN</span>
+        </li>
+      </ol>
     </div>
   )
 }

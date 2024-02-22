@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
-import "../styles/Home.css";
+import React from 'react'
+import "../styles/Home.css"
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -7,7 +7,6 @@ import EmailIcon from '@mui/icons-material/Email';
 import myPhoto from "../resource/myPhoto.jpg";
 import "../styles/about.css";
 import backhome from "../resource/backhome.jpg";
-import Typing from 'react-typing-animation';
 
 function Home() {
   return (
@@ -16,13 +15,9 @@ function Home() {
         <div className="photo">
           <img src={myPhoto} alt="myPhoto" />
         </div>
-        <h2>
-          <Typing>
-            <span>Hi, I'm Hill. Welcome!</span>
-          </Typing>
-        </h2>
+        <h2>Hi, I'm Hill. Welcome !</h2>
         <div className="prompt">
-          <p>I am a year 4 Computer Engineering student currently studying at HKUST</p>
+          <p>I am a yaer 4 Computer Engineering student currently studenting at HKUST</p>
           <a href="https://www.instagram.com/hill__hc/">
             <InstagramIcon />
           </a>
@@ -43,24 +38,24 @@ function Home() {
         backgroundPosition: 'center center',
         minHeight: '100vh'
       }}>
-        <h1>Skills</h1>
-        <ul className="list">
-          <li className="listItem">
+        <h1> Skills</h1>
+        <ol className='list'>
+          <li className='listItem'>
             <h2>Programming Languages</h2>
             <span>Python, C, C++, MySQL</span>
           </li>
-          <li className="listItem">
+          <li className='listItem'>
             <h2>Machine Learning and AI</h2>
-            <span>PyTorch, TensorFlow, and NLP related topics</span>
+            <span>Pytorch, Tensorflow and NLP related topics</span>
           </li>
-          <li className="listItem">
+          <li className='listItem'>
             <h2>Others</h2>
             <span>Linux, Arduino, Raspberry Pi, STM32, LoRaWAN</span>
           </li>
-        </ul>
+        </ol>
       </div>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home

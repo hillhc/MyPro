@@ -24,7 +24,7 @@ function Project() {
                 </Typography>
               </div>
             </AccordionSummary>
-            <AccordionDetails style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+            <AccordionDetails style={{ display: "flex", flexDirection: "column" }}>
               <Typography variant="body1" style={{ textAlign: "justify", fontSize: "1.2rem", marginBottom: "1rem" }}>
                 The project involves the use of the latest object detection model, YOLOv8, with MobileNetV3 backbone structure, to design and train a
                 model capable of detecting the presence of vehicles in parking spaces. This model can be deployed on edge devices with limited

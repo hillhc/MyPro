@@ -71,7 +71,7 @@ function Home() {
           </li>
           <li className='listItem'>
             <h2>Others</h2>
-            <span>Linux, Arduino, Raspberry Pi, STM32, LoRaWAN</span>
+            <span>Linux, Arduino, Raspberry Pi, STM32 Plateform, LoRaWAN</span>
           </li>
         </ol>
       </div>

@@ -24,7 +24,7 @@ function Project() {
                 </Typography>
               </div>
             </AccordionSummary>
-            <AccordionDetails style={{ display: "flex", flexDirection: "column" }}>
+            <AccordionDetails style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
               <Typography variant="body1" style={{ textAlign: "justify", fontSize: "1.2rem", marginBottom: "1rem" }}>
                 The project involves the use of the latest object detection model, YOLOv8, with MobileNetV3 backbone structure, to design and train a
                 model capable of detecting the presence of vehicles in parking spaces. This model can be deployed on edge devices with limited
@@ -41,7 +41,9 @@ function Project() {
                 be found here: <a href="https://fyp-react-control-panel.pages.dev/" style={{ textDecoration: "none", color: "blue" }}>https://fyp-react-control-panel.pages.dev/</a>. 
                 The model utilized in the project is also undergoing fine-tuning to improve performance and versatility.
               </Typography>
-              <img src={projectImage} alt="Project Image" style={{ width: "50%", height: "auto", objectFit: "cover", marginBottom: "1rem" }} />
+              <div style={{ display: "flex", justifyContent: "center", marginBottom: "1rem" }}>
+                <img src={projectImage} alt="Project Image" style={{ width: "50%", height: "auto", objectFit: "cover" }} />
+              </div>
               <Typography variant="body1" style={{ textAlign: "justify", fontSize: "1.2rem", marginBottom: "1rem" }}>
                 The project is currently in the development stage. More details about the project can be found at: 
                 <a href="http://eek123.ust.hk/SmartCarpark" style={{ textDecoration: "none", color: "blue" }}>http://eek123.ust.hk/SmartCarpark</a>

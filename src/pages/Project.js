@@ -32,7 +32,7 @@ function Project() {
                 The project also involves the design and building of a backend system structure and the use of LoRaWAN technology to transmit parking space availability information to
                 the backend, which can then be used to inform drivers of available parking spaces.
               </Typography>
-              <Typography variant="subtitle1" style={{ textAlign: "left", fontSize: "1.2rem", marginBottom: "1rem", fontWeight: "bold" }}>
+              <Typography variant="subtitle1" style={{ textAlign: "match-parent", fontSize: "1.2rem", marginBottom: "1rem", fontWeight: "bold" }}>
                 Current Progress
               </Typography>
               <Typography variant="body1" style={{ textAlign: "justify", fontSize: "1.2rem", marginBottom: "1rem" }}>

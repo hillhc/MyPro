@@ -27,7 +27,7 @@ function About() {
           </VerticalTimelineElement>
           <VerticalTimelineElement 
           className="vertical-timelinbe-element--education" 
-          date="2020 - Present" 
+          date="2020 - 2024" 
           iconStyle={{background: '#3e497a', color : "#fff"}} 
           icon={<SchoolIcon />}> 
           <h3 className="vertical-timeline-element-title">HKUST</h3>

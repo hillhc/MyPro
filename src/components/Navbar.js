@@ -25,12 +25,6 @@ const BlackListItemIcon = styled(ListItemIcon)(({ theme }) => ({
   color: 'black',
 }));
 
-const ToolbarStyled = styled(Toolbar)(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-}));
-
 function Navbar() {
   const [expand, setExpand] = useState(false);
   const location = useLocation();
@@ -41,7 +35,10 @@ function Navbar() {
 
   return (
     <NavbarContainer position="static">
-      <ToolbarStyled>
+      <Toolbar>
+        <IconButton onClick={() => setExpand((prev) => !prev)}>
+          <ReorderIcon sx={{ color: 'white' }} />
+        </IconButton>
         <Drawer anchor="left" open={expand} onClose={() => setExpand(false)}>
           <SideListContainer>
             <ListItem button component={Link} to="/">
@@ -64,7 +61,7 @@ function Navbar() {
             </ListItem>
           </SideListContainer>
         </Drawer>
-      </ToolbarStyled>
+      </Toolbar>
     </NavbarContainer>
   );
 }

@@ -5,7 +5,6 @@ import SchoolIcon from '@mui/icons-material/School';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import WorkIcon from '@mui/icons-material/Work';
 import myResume from "../resource/resume.pdf"
-import myResume2 from "../resource/resume2.pdf"
 import backgroundabout from "../resource/backgroundabout.jpg"
 
 function About() {

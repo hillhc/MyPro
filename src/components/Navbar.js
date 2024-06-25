@@ -41,28 +41,30 @@ function Navbar() {
 
   return (
     <NavbarContainer position="static">
-      <Drawer anchor="left" open={expand} onClose={() => setExpand(false)}>
-        <SideListContainer>
-          <ListItem button component={Link} to="/">
-            <BlackListItemIcon>
-              <HomeIcon />
-            </BlackListItemIcon>
-            <ListItemTextStyled primary="Home" />
-          </ListItem>
-          <ListItem button component={Link} to="/about">
-            <BlackListItemIcon>
-              <InfoIcon />
-            </BlackListItemIcon>
-            <ListItemTextStyled primary="About Me" />
-          </ListItem>
-          <ListItem button component={Link} to="/project">
-            <BlackListItemIcon>
-              <FolderIcon />
-            </BlackListItemIcon>
-            <ListItemTextStyled primary="My Project" />
-          </ListItem>
-        </SideListContainer>
-      </Drawer>
+      <ToolbarStyled>
+        <Drawer anchor="left" open={expand} onClose={() => setExpand(false)}>
+          <SideListContainer>
+            <ListItem button component={Link} to="/">
+              <BlackListItemIcon>
+                <HomeIcon />
+              </BlackListItemIcon>
+              <ListItemTextStyled primary="Home" />
+            </ListItem>
+            <ListItem button component={Link} to="/about">
+              <BlackListItemIcon>
+                <InfoIcon />
+              </BlackListItemIcon>
+              <ListItemTextStyled primary="About Me" />
+            </ListItem>
+            <ListItem button component={Link} to="/project">
+              <BlackListItemIcon>
+                <FolderIcon />
+              </BlackListItemIcon>
+              <ListItemTextStyled primary="My Project" />
+            </ListItem>
+          </SideListContainer>
+        </Drawer>
+      </ToolbarStyled>
     </NavbarContainer>
   );
 }

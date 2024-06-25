@@ -61,19 +61,7 @@ function About() {
             cursor: 'pointer',
             display: 'block',
             margin: '0 auto 10px' /* Add margin-bottom to create space */
-          }}>Work Resume</button>
-        </a>
-        <a href={myResume2} download style={{textDecoration: 'none'}}>
-          <button style={{
-            backgroundColor: '#3e497a',
-            color: '#fff',
-            border: 'none',
-            padding: '10px 20px',
-            borderRadius: '5px',
-            cursor: 'pointer',
-            display: 'block',
-            margin: '0 auto'
-          }}>Academic Resume</button>
+          }}>Resume</button>
         </a>
       </div>
     </div>

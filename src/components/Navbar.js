@@ -25,6 +25,12 @@ const BlackListItemIcon = styled(ListItemIcon)(({ theme }) => ({
   color: 'black',
 }));
 
+const ToolbarStyled = styled(Toolbar)(({ theme }) => ({
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+}));
+
 function Navbar() {
   const [expand, setExpand] = useState(false);
   const location = useLocation();
@@ -35,33 +41,44 @@ function Navbar() {
 
   return (
     <NavbarContainer position="static">
-      <Toolbar>
+      <ToolbarStyled>
         <IconButton onClick={() => setExpand((prev) => !prev)}>
           <ReorderIcon sx={{ color: 'white' }} />
         </IconButton>
-        <Drawer anchor="left" open={expand} onClose={() => setExpand(false)}>
-          <SideListContainer>
-            <ListItem button component={Link} to="/">
-              <BlackListItemIcon>
-                <HomeIcon />
-              </BlackListItemIcon>
-              <ListItemTextStyled primary="Home" />
-            </ListItem>
-            <ListItem button component={Link} to="/about">
-              <BlackListItemIcon>
-                <InfoIcon />
-              </BlackListItemIcon>
-              <ListItemTextStyled primary="About Me" />
-            </ListItem>
-            <ListItem button component={Link} to="/project">
-              <BlackListItemIcon>
-                <FolderIcon />
-              </BlackListItemIcon>
-              <ListItemTextStyled primary="My Project" />
-            </ListItem>
-          </SideListContainer>
-        </Drawer>
-      </Toolbar>
+        <div>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <ListItemTextStyled primary="Home" />
+          </Link>
+          <Link to="/about" style={{ textDecoration: 'none' }}>
+            <ListItemTextStyled primary="About Me" />
+          </Link>
+          <Link to="/project" style={{ textDecoration: 'none' }}>
+            <ListItemTextStyled primary="My Project" />
+          </Link>
+        </div>
+      </ToolbarStyled>
+      <Drawer anchor="left" open={expand} onClose={() => setExpand(false)}>
+        <SideListContainer>
+          <ListItem button component={Link} to="/">
+            <BlackListItemIcon>
+              <HomeIcon />
+            </BlackListItemIcon>
+            <ListItemTextStyled primary="Home" />
+          </ListItem>
+          <ListItem button component={Link} to="/about">
+            <BlackListItemIcon>
+              <InfoIcon />
+            </BlackListItemIcon>
+            <ListItemTextStyled primary="About Me" />
+          </ListItem>
+          <ListItem button component={Link} to="/project">
+            <BlackListItemIcon>
+              <FolderIcon />
+            </BlackListItemIcon>
+            <ListItemTextStyled primary="My Project" />
+          </ListItem>
+        </SideListContainer>
+      </Drawer>
     </NavbarContainer>
   );
 }

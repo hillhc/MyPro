@@ -19,10 +19,19 @@ const ListItemTextStyled = styled(ListItemText)(({ theme }) => ({
 const SideListContainer = styled(List)(({ theme }) => ({
   backgroundColor: '#white',
   width: '200px',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'flex-start',
 }));
 
 const BlackListItemIcon = styled(ListItemIcon)(({ theme }) => ({
   color: 'black',
+}));
+
+const ListItemStyled = styled(ListItem)(({ theme }) => ({
+  display: 'flex',
+  alignItems: 'center',
+  width: '100%',
 }));
 
 function Navbar() {
@@ -41,24 +50,24 @@ function Navbar() {
         </IconButton>
         <Drawer anchor="left" open={expand} onClose={() => setExpand(false)}>
           <SideListContainer>
-            <ListItem button component={Link} to="/">
+            <ListItemStyled button component={Link} to="/">
               <BlackListItemIcon>
                 <HomeIcon />
               </BlackListItemIcon>
               <ListItemTextStyled primary="Home" />
-            </ListItem>
-            <ListItem button component={Link} to="/about">
+            </ListItemStyled>
+            <ListItemStyled button component={Link} to="/about">
               <BlackListItemIcon>
                 <InfoIcon />
               </BlackListItemIcon>
               <ListItemTextStyled primary="About Me" />
-            </ListItem>
-            <ListItem button component={Link} to="/project">
+            </ListItemStyled>
+            <ListItemStyled button component={Link} to="/project">
               <BlackListItemIcon>
                 <FolderIcon />
               </BlackListItemIcon>
               <ListItemTextStyled primary="My Project" />
-            </ListItem>
+            </ListItemStyled>
           </SideListContainer>
         </Drawer>
       </Toolbar>

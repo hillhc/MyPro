@@ -33,17 +33,22 @@ function Project() {
                 the backend, which can then be used to inform drivers of available parking spaces.
               </Typography>
               <Typography variant="body1" style={{ textAlign: "justify", fontSize: "1.2rem", marginBottom: "1rem" }}>
-                The project consisted of two main parts: Edge AI and Frontend Website:
-
-                1. **Edge AI**:
+                <div style="text-align: justify; font-size: 1.2rem; margin-bottom: 1rem;">
+                  The project consisted of two main parts: Edge AI and Frontend Website:
+                </div>
+                <div style="text-align: justify; font-size: 1.2rem; margin-left: 1.5rem;">
+                  1. **Edge AI**:
                   - The trained YOLOv8 model would detect cars and process vacancy information for each parking slot in the captured live stream of carparks, which was deployed on Raspberry Pi.
                   - The application then would pass the captured vacancy information to the backend AWS server via the LoRaWAN network.
-
-                2. **Frontend Website**:
+                </div>
+                <div style="text-align: justify; font-size: 1.2rem; margin-left: 1.5rem;">
+                  2. **Frontend Website**:
                   - The backend server would process and merge the information from different edge devices and store it in the database.
                   - The result would then be presented on the frontend website.
-
-                The final version of the frontend can be found here: [https://fyp-react-control-panel.pages.dev/](https://fyp-react-control-panel.pages.dev/)
+                </div>
+                <div style="text-align: justify; font-size: 1.2rem; margin-bottom: 1rem;">
+                  The final version of the frontend can be found here: <a href="https://fyp-react-control-panel.pages.dev/" style={{ textDecoration: "none", color: "blue" }}>https://fyp-react-control-panel.pages.dev/</a>
+                </div>
               </Typography>
               <div style={{ display: "flex", justifyContent: "center", marginBottom: "1rem" }}>
                 <img src={projectImage} alt="Project Image" style={{ width: "50%", height: "auto", objectFit: "cover" }} />

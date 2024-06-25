@@ -41,22 +41,6 @@ function Navbar() {
 
   return (
     <NavbarContainer position="static">
-      <ToolbarStyled>
-        <IconButton onClick={() => setExpand((prev) => !prev)}>
-          <ReorderIcon sx={{ color: 'white' }} />
-        </IconButton>
-        <div>
-          <Link to="/" style={{ textDecoration: 'none' }}>
-            <ListItemTextStyled primary="Home" />
-          </Link>
-          <Link to="/about" style={{ textDecoration: 'none' }}>
-            <ListItemTextStyled primary="About Me" />
-          </Link>
-          <Link to="/project" style={{ textDecoration: 'none' }}>
-            <ListItemTextStyled primary="My Project" />
-          </Link>
-        </div>
-      </ToolbarStyled>
       <Drawer anchor="left" open={expand} onClose={() => setExpand(false)}>
         <SideListContainer>
           <ListItem button component={Link} to="/">

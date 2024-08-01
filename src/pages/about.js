@@ -43,11 +43,19 @@ function About() {
           </VerticalTimelineElement>
           <VerticalTimelineElement 
           className="vertical-timelinbe-element--education" 
-          date="2023 October - Current" 
-          iconStyle={{background: '#128308', color : "#fff"}} 
+          date="2023 October - 2024 July" 
+          iconStyle={{background: '#3e497a', color : "#fff"}} 
           icon={<WorkIcon />}> 
           <h3 className="vertical-timeline-element-title">HKT - Fixed Net Operation, ISPC</h3>
           <p>Part Time Internship</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+          className="vertical-timelinbe-element--education" 
+          date="2024 August - Current" 
+          iconStyle={{background: '#128308', color : "#fff"}} 
+          icon={<WorkIcon />}> 
+          <h3 className="vertical-timeline-element-title">HKUST - CSE</h3>
+          <p>Research Assistant</p> 
           </VerticalTimelineElement>
         </VerticalTimeline>
         <a href={myResume} download style={{textDecoration: 'none'}}>

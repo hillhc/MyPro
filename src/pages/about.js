@@ -37,7 +37,7 @@ function About() {
           className="vertical-timelinbe-element--education" 
           date="2023 June - 2023 August" 
           iconStyle={{background: '#3e497a', color : "#fff"}} 
-          icon={<WorkHistoryIcon />}> 
+          icon={<WorkIcon />}> 
           <h3 className="vertical-timeline-element-title">HKT - Fixed Net Operation, ISPC</h3>
           <p>Summer Internship</p>
           </VerticalTimelineElement>
@@ -53,7 +53,7 @@ function About() {
           className="vertical-timelinbe-element--education" 
           date="2024 August - Current" 
           iconStyle={{background: '#128308', color : "#fff"}} 
-          icon={<WorkIcon />}> 
+          icon={<WorkHistoryIcon  />}> 
           <h3 className="vertical-timeline-element-title">HKUST - CSE</h3>
           <p>Research Assistant</p> 
           </VerticalTimelineElement>

@@ -35,7 +35,7 @@ function Home() {
         </div>
         <h2>{text}</h2>
         <div className="prompt">
-          <p>I am a year 4 Computer Engineering student currently studying at HKUST</p>
+          <p>I am a recent graduate in Computer Engineering from HKUST</p>
           <a href="https://www.instagram.com/hill__hc/">
             <InstagramIcon />
           </a>

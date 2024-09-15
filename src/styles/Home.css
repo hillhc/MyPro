@@ -57,7 +57,7 @@
 }
 
 .skills .skill-item {
-  width: 48%; /* Two items per row */
+  width: 45%; /* Adjusted width for two columns */
   background: rgba(255, 255, 255, 0.1); /* Optional background for visibility */
   padding: 15px; /* Increased padding */
   margin: 10px; /* Spacing between items */

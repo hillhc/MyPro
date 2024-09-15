@@ -51,20 +51,22 @@
 .skills .skills-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 60%; /* Adjust to fit your layout */
-  margin: 0 auto; /* Center the grid */
+  justify-content: center; /* Center the items */
+  width: 60%; /* Adjusted width to fit layout */
+  margin: 20px 0; /* Spacing around the grid */
 }
 
 .skills .skill-item {
   width: 48%; /* Two items per row */
   background: rgba(255, 255, 255, 0.1); /* Optional background for visibility */
   padding: 15px; /* Increased padding */
-  margin: 10px 0;
+  margin: 10px; /* Spacing between items */
   border-radius: 8px; /* Optional rounded corners */
   color: white;
   display: flex;
-  align-items: center; /* Center items vertically */
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
   transition: transform 0.2s; /* Smooth hover effect */
 }
 
@@ -73,12 +75,9 @@
 }
 
 .skills .skill-item h2 {
-  margin-left: 10px; /* Space between icon and text */
+  margin-top: 10px; /* Space between icon and text */
   font-size: 24px; /* Increased font size */
-}
-
-.skills .skill-item svg {
-  color: white; /* Ensure icon color is white */
+  text-align: center; /* Center the text */
 }
 
 .skills .list {
@@ -105,15 +104,19 @@
     text-align: center;
   }
 
-  .list {
-    padding: 0;
+  .skills h1 {
+    font-size: 30px;
   }
 
-  .skills h2 {
-    font-size: 30px;
+  .skills .skills-grid {
+    width: 90%; /* Full width on smaller screens */
   }
 
   .skills .skill-item {
     width: 100%; /* Full width on small screens */
+  }
+
+  .skills .skill-item h2 {
+    font-size: 20px; /* Adjust text size for small screens */
   }
 }

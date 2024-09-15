@@ -5,8 +5,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import myPhoto from "../resource/myPhoto.jpg";
+import "../styles/about.css";
 import backhome from "../resource/backhome.jpg";
-import { FaCode, FaRobot, FaEye, FaLinux } from 'react-icons/fa';
+import { FaCode, FaRobot, FaEye, FaLinux } from 'react-icons/fa'; // Import relevant icons
 
 function Home() {
   const [text, setText] = useState('');
@@ -74,19 +75,19 @@ function Home() {
         <h1 style={{ position: 'relative', zIndex: 2 }}>Skills</h1>
         <div className="skills-grid" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', position: 'relative', zIndex: 2 }}>
           <div className='skill-item'>
-            <FaCode size={40} />
+            <FaCode size={30} />
             <h2>Programming</h2>
           </div>
           <div className='skill-item'>
-            <FaRobot size={40} />
+            <FaRobot size={30} />
             <h2>AI/Machine Learning</h2>
           </div>
           <div className='skill-item'>
-            <FaEye size={40} />
+            <FaEye size={30} />
             <h2>Computer Vision</h2>
           </div>
           <div className='skill-item'>
-            <FaLinux size={40} />
+            <FaLinux size={30} />
             <h2>Linux/Edge Platform Development</h2>
           </div>
         </div>

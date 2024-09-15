@@ -53,28 +53,32 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 60%; /* Adjust to fit your layout */
+  margin: 0 auto; /* Center the grid */
 }
 
 .skills .skill-item {
   width: 48%; /* Two items per row */
   background: rgba(255, 255, 255, 0.1); /* Optional background for visibility */
-  padding: 10px;
+  padding: 15px; /* Increased padding */
   margin: 10px 0;
   border-radius: 8px; /* Optional rounded corners */
   color: white;
   display: flex;
   align-items: center; /* Center items vertically */
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.skills .skill-item:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .skills .skill-item h2 {
-  margin-left: 10px;
-  margin-right: 5px;
+  margin-left: 10px; /* Space between icon and text */
+  font-size: 24px; /* Increased font size */
 }
 
-.skills .skill-item span {
-  margin-left: 5px;
-  font-size: 14px;
-  color: lightgray; /* Adjust color for better readability */
+.skills .skill-item svg {
+  color: white; /* Ensure icon color is white */
 }
 
 .skills .list {

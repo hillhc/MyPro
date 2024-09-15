@@ -19,14 +19,6 @@ function About() {
         <VerticalTimeline lineColor='#3e497a'>
           <VerticalTimelineElement 
           className="vertical-timelinbe-element--education" 
-          date="2014 - 2020" 
-          iconStyle={{background: '#3e497a', color : "#fff"}} 
-          icon={<SchoolIcon />}> 
-          <h3 className="vertical-timeline-element-title">The Hong Kong Sha Tin Methodist College</h3>
-          <p>HKDSE Mathematics 5, Mathematics Extended Modules 2 5</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement 
-          className="vertical-timelinbe-element--education" 
           date="2020 - 2024" 
           iconStyle={{background: '#3e497a', color : "#fff"}} 
           icon={<SchoolIcon />}> 

@@ -7,6 +7,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import myPhoto from "../resource/myPhoto.jpg";
 import "../styles/about.css";
 import backhome from "../resource/backhome.jpg";
+import { FaCode, FaRobot, FaEye, FaLinux } from 'react-icons/fa'; // Import relevant icons
 
 function Home() {
   const [text, setText] = useState('');
@@ -56,22 +57,32 @@ function Home() {
           backgroundImage: `url(${backhome})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
-          minHeight: '100vh'
+          minHeight: '100vh',
+          padding: '20px',
+          color: 'white',
         }}
       >
         <h1>Skills</h1>
         <ol className='list'>
           <li className='listItem'>
-            <h2>Programming Languages</h2>
-            <span>Python, C, C++, MySQL</span>
+            <FaCode size={30} />
+            <h2>Programming</h2>
+            <span>Python, C, C++</span>
           </li>
           <li className='listItem'>
-            <h2>Machine Learning and AI</h2>
-            <span>Pytorch, Tensorflow and NLP related topics</span>
+            <FaRobot size={30} />
+            <h2>AI/Machine Learning</h2>
+            <span>Pytorch</span>
           </li>
           <li className='listItem'>
-            <h2>Others</h2>
-            <span>Linux, Arduino, Raspberry Pi, STM32 Plateform, LoRaWAN</span>
+            <FaEye size={30} />
+            <h2>Computer Vision</h2>
+            <span>Related topics</span>
+          </li>
+          <li className='listItem'>
+            <FaLinux size={30} />
+            <h2>Linux/Edge Platform Development</h2>
+            <span>Linux, Arduino, Raspberry Pi</span>
           </li>
         </ol>
       </div>

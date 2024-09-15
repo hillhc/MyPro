@@ -60,31 +60,41 @@ function Home() {
           minHeight: '100vh',
           padding: '20px',
           color: 'white',
+          position: 'relative',
         }}
       >
-        <h1>Skills</h1>
-        <ol className='list'>
-          <li className='listItem'>
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent background
+          zIndex: 1,
+        }} />
+        <h1 style={{ position: 'relative', zIndex: 2 }}>Skills</h1>
+        <div className="skills-grid" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', position: 'relative', zIndex: 2 }}>
+          <div className='skill-item'>
             <FaCode size={30} />
             <h2>Programming</h2>
             <span>Python, C, C++</span>
-          </li>
-          <li className='listItem'>
+          </div>
+          <div className='skill-item'>
             <FaRobot size={30} />
             <h2>AI/Machine Learning</h2>
             <span>Pytorch</span>
-          </li>
-          <li className='listItem'>
+          </div>
+          <div className='skill-item'>
             <FaEye size={30} />
             <h2>Computer Vision</h2>
             <span>Related topics</span>
-          </li>
-          <li className='listItem'>
+          </div>
+          <div className='skill-item'>
             <FaLinux size={30} />
             <h2>Linux/Edge Platform Development</h2>
             <span>Linux, Arduino, Raspberry Pi</span>
-          </li>
-        </ol>
+          </div>
+        </div>
       </div>
     </div>
   );

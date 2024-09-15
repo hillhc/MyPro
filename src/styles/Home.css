@@ -28,6 +28,7 @@
   width: 40%;
   font-size: 20px;
 }
+
 .prompt svg {
   font-size: 60px;
   margin: 5px;
@@ -45,6 +46,35 @@
 
 .skills h1 {
   color: #000000;
+}
+
+.skills .skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60%; /* Adjust to fit your layout */
+}
+
+.skills .skill-item {
+  width: 48%; /* Two items per row */
+  background: rgba(255, 255, 255, 0.1); /* Optional background for visibility */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px; /* Optional rounded corners */
+  color: white;
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.skills .skill-item h2 {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.skills .skill-item span {
+  margin-left: 5px;
+  font-size: 14px;
+  color: lightgray; /* Adjust color for better readability */
 }
 
 .skills .list {
@@ -70,11 +100,16 @@
   .skills {
     text-align: center;
   }
+
   .list {
     padding: 0;
   }
 
   .skills h2 {
     font-size: 30px;
+  }
+
+  .skills .skill-item {
+    width: 100%; /* Full width on small screens */
   }
 }

@@ -46,7 +46,7 @@ function About() {
           date="2024 August - Current" 
           iconStyle={{background: '#128308', color : "#fff"}} 
           icon={<WorkHistoryIcon  />}> 
-          <h3 className="vertical-timeline-element-title">HKUST - CSE, Professor Gary Chan's Research Lab</h3>
+          <h3 className="vertical-timeline-element-title">HKUST - CSE, Professor Gary Chan's Lab</h3>
           <p>Research Assistant</p> 
           </VerticalTimelineElement>
         </VerticalTimeline>

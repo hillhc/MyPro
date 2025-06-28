@@ -43,7 +43,7 @@ function About() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
           className="vertical-timelinbe-element--education" 
-          date="2024 August - Current" 
+          date="2024 August - 2025 June" 
           iconStyle={{background: '#128308', color : "#fff"}} 
           icon={<WorkHistoryIcon  />}> 
           <h3 className="vertical-timeline-element-title">HKUST - CSE, Professor Gary Chan's Lab</h3>

@@ -8,6 +8,7 @@ import myResume from "../resource/resume.pdf"
 import backgroundabout from "../resource/backgroundabout.jpg"
 
 function About() {
+  /* WorkHistoryIcon*/
   return(
     <div className="About" style={{
       backgroundImage: `url(${backgroundabout})`,
@@ -45,8 +46,8 @@ function About() {
           className="vertical-timelinbe-element--education" 
           date="2024 August - 2025 June" 
           iconStyle={{background: '#128308', color : "#fff"}} 
-          icon={<WorkHistoryIcon  />}> 
-          <h3 className="vertical-timeline-element-title">HKUST - CSE, Professor Gary Chan's Lab</h3>
+          icon={<WorkIcon  />}> 
+          <h3 className="vertical-timeline-element-title">HKUST - CSE, Prof. Shueng-Han Gary Chan</h3>
           <p>Research Assistant</p> 
           </VerticalTimelineElement>
         </VerticalTimeline>

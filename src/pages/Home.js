@@ -12,6 +12,7 @@ import { FaCode, FaRobot, FaEye, FaLinux } from 'react-icons/fa'; // Import rele
 function Home() {
   const [text, setText] = useState('');
   const greetingText = "Hi, I'm Hill. Welcome!";
+  /*<p>I am a recent graduate in Computer Engineering from HKUST</p>*/
 
   useEffect(() => {
     let currentIndex = 0;
@@ -36,7 +37,6 @@ function Home() {
         </div>
         <h2>{text}</h2>
         <div className="prompt">
-          <p>I am a recent graduate in Computer Engineering from HKUST</p>
           <a href="https://www.instagram.com/hill__hc/">
             <InstagramIcon />
           </a>

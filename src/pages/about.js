@@ -4,7 +4,7 @@ import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from '@mui/icons-material/School';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import WorkIcon from '@mui/icons-material/Work';
-import myResume from "../resource/resume.pdf"
+import myResume from "../resource/Hill's Resume.pdf"
 import backgroundabout from "../resource/backgroundabout.jpg"
 
 function About() {
@@ -59,7 +59,7 @@ function About() {
           <p>MSc Computer Graphics, Vision and Imaging</p>
           </VerticalTimelineElement>
         </VerticalTimeline>
-        <a href={myResume} download style={{textDecoration: 'none'}}>
+        <a href={myResume} download="Hill_Resume.pdf" style={{textDecoration: 'none'}}>
           <button style={{
             backgroundColor: '#3e497a',
             color: '#fff',
@@ -68,8 +68,10 @@ function About() {
             borderRadius: '5px',
             cursor: 'pointer',
             display: 'block',
-            margin: '0 auto 10px' /* Add margin-bottom to create space */
-          }}>Resume</button>
+            margin: '0 auto 10px'
+          }}>
+            Resume
+          </button>
         </a>
       </div>
     </div>

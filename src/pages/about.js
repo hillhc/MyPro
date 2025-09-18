@@ -59,7 +59,7 @@ function About() {
           <p>MSc Computer Graphics, Vision and Imaging</p>
           </VerticalTimelineElement>
         </VerticalTimeline>
-        <a href={myResume} download="Hill_Resume.pdf" style={{textDecoration: 'none'}}>
+        <a href={myResume} download="Hill's Resume.pdf" style={{textDecoration: 'none'}}>
           <button style={{
             backgroundColor: '#3e497a',
             color: '#fff',

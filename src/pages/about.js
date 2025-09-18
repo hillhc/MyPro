@@ -45,10 +45,18 @@ function About() {
           <VerticalTimelineElement
           className="vertical-timelinbe-element--education" 
           date="2024 August - 2025 June" 
-          iconStyle={{background: '#128308', color : "#fff"}} 
+          iconStyle={{background: '#3e497a', color : "#fff"}} 
           icon={<WorkIcon  />}> 
           <h3 className="vertical-timeline-element-title">HKUST - CSE, Prof. Shueng-Han Gary Chan</h3>
           <p>Research Assistant</p> 
+          </VerticalTimelineElement>
+          <VerticalTimelineElement 
+          className="vertical-timelinbe-element--education" 
+          date="2025 September - Current" 
+          iconStyle={{background: '#128308', color : "#fff"}} 
+          icon={<SchoolIcon />}> 
+          <h3 className="vertical-timeline-element-title">UCL</h3>
+          <p>MSc Computer Graphics, Vision and Imaging</p>
           </VerticalTimelineElement>
         </VerticalTimeline>
         <a href={myResume} download style={{textDecoration: 'none'}}>

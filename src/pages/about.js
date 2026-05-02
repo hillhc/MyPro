@@ -2,13 +2,11 @@ import React from "react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from '@mui/icons-material/School';
-import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import WorkIcon from '@mui/icons-material/Work';
 import myResume from "../resource/Hill's Resume.pdf"
 import backgroundabout from "../resource/backgroundabout.jpg"
 
 function About() {
-  /* WorkHistoryIcon*/
   return(
     <div className="About" style={{
       backgroundImage: `url(${backgroundabout})`,

@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardContent, CardMedia, Typography, Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
+import { Card, CardContent, Typography, Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import projectImage from "../resource/result3.jpg";
 import "../styles/project.css";
@@ -46,7 +46,7 @@ function Project() {
                 The frontend website can be found at: <a href="https://fyp-react-control-panel.pages.dev/" style={{ textDecoration: "none", color: "blue" }}>https://fyp-react-control-panel.pages.dev/</a>
               </Typography>
               <div style={{ display: "flex", justifyContent: "center", marginBottom: "1rem" }}>
-                <img src={projectImage} alt="Project Image" style={{ width: "50%", height: "auto", objectFit: "cover" }} />
+                <img src={projectImage} alt="Project preview" style={{ width: "50%", height: "auto", objectFit: "cover" }} />
               </div>
               <Typography variant="body1" style={{ textAlign: "justify", fontSize: "1.2rem", marginBottom: "1rem" }}>
                 More details about the project can be found at: 

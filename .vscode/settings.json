@@ -1,4 +1,5 @@
 {
   "workbench.browser.openLocalhostLinks": true,
-  "workbench.browser.newTabPlacement": "sideGroup"
+  "workbench.browser.newTabPlacement": "sideGroup",
+  "files.encoding": "utf8"
 }

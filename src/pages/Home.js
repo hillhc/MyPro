@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 import myPhoto from '../resource/myPhoto.jpg';
@@ -20,7 +20,7 @@ function Home() {
         <div className="home-hero__copy">
           <p className="eyebrow">SOFTWARE ENGINEER AT BYTRONIC</p>
           <h1 id="home-heading"><span className="home-greeting">Hi, I'm Hill.</span><span className="home-headline">Welcome to my corner of the web.</span></h1>
-          <p className="home-intro">Exploring software, computer vision, and the possibilities where they meet.</p>
+          <p className="home-intro">Exploring software, computer vision, AI/ML, and how they meet.</p>
           <div className="home-actions">
             <Link className="primary-link" to="/project">Explore my projects <ArrowForwardIcon aria-hidden="true" /></Link>
             <Link className="secondary-link" to="/about">More about me <ArrowOutwardIcon aria-hidden="true" /></Link>

@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Website: Start local server",
+      "type": "shell",
+      "command": "npm",
+      "windows": { "command": "npm.cmd" },
+      "args": ["start"],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": { "BROWSER": "none", "HOST": "127.0.0.1", "PORT": "3000", "FORCE_COLOR": "0" }
+      },
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "website",
+        "pattern": { "regexp": "^(.*):(\\d+):(\\d+): (.*)$", "file": 1, "line": 2, "column": 3, "message": 4 },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Starting the development server|Compiling",
+          "endsPattern": "Compiled successfully|Compiled with warnings|webpack compiled"
+        }
+      },
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "runOptions": { "instanceLimit": 1 }
+    },
+    {
+      "label": "Website: Build production",
+      "type": "shell",
+      "command": "npm",
+      "windows": { "command": "npm.cmd" },
+      "args": ["run", "build"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "group": { "kind": "build", "isDefault": true }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+.site-header { background: #f8f9f5; border-bottom: 1px solid #d8e1d9; }
+.site-header__inner { max-width: 1184px; min-height: 76px; padding: 12px 32px; margin: auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.site-brand { font-size: 23px; font-weight: 750; text-decoration: none; letter-spacing: -.04em; }
+.site-brand span { color: #216b5c; }
+.desktop-nav { display: flex; gap: 8px; }
+.desktop-nav a, .mobile-nav a { text-decoration: none; font-size: 14px; font-weight: 600; padding: 14px 20px; border-radius: 8px; color: #566965; }
+.desktop-nav a:hover, .mobile-nav a:hover, .desktop-nav a.active, .mobile-nav a.active { background: #e8f0e9; color: #183c39; }
+.site-header .mobile-menu-button { display: none; color: #183c39; min-width: 44px; min-height: 44px; }
+.mobile-nav-header { display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; color: #183c39; font-weight: 650; }
+.mobile-nav { display: flex; flex-direction: column; padding: 8px 20px; gap: 8px; }
+@media (max-width: 639px) {
+  .site-header__inner { min-height: 64px; padding: 10px 22px; }
+  .desktop-nav { display: none; }
+  .site-header .mobile-menu-button { display: inline-flex; }
+}

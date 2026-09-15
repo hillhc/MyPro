@@ -7,23 +7,23 @@ import EmailIcon from '@mui/icons-material/Email';
 
 function Footer() {
   return (
-    <div className='footer'>
+    <footer className='footer'>
         <div className= "socialMedia">
-        <a href="https://www.instagram.com/hill__hc/">
+        <a aria-label="Instagram" href="https://www.instagram.com/hill__hc/">
             <InstagramIcon />
           </a>
-          <a href="https://www.linkedin.com/in/hill-choy-hc/">
+          <a aria-label="LinkedIn" href="https://www.linkedin.com/in/hill-choy-hc/">
             <LinkedInIcon />
           </a>
-          <a href="https://github.com/hillhc">
+          <a aria-label="GitHub" href="https://github.com/hillhc">
             <GitHubIcon />
           </a>
-          <a href="mailto:hchoy@hillchoy.com">
+          <a aria-label="Email Hill" href="mailto:hchoy@hillchoy.com">
             <EmailIcon />
           </a>
         </div>
         <p> 2026 hillchoy.com</p>
-    </div>
+    </footer>
   )
 }
 

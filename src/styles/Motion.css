@@ -1,0 +1,67 @@
+/* Content stays visible by default, including when reduced motion is enabled. */
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(14px) rotate(var(--entrance-rotation, 0deg));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(var(--entrance-rotation, 0deg));
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .home-hero__copy > *,
+  .home-portrait,
+  .skills > .eyebrow,
+  .skills > h2,
+  .skill-item,
+  .about-page__hero > *,
+  .about-page__section-heading,
+  .about-page__entry,
+  .about-page__note,
+  .about-page__education-card,
+  .projects-heading,
+  .projects-page .project-card {
+    animation: page-enter 1000ms cubic-bezier(.22, .61, .36, 1) backwards;
+    animation-delay: var(--entrance-delay, 0ms);
+  }
+
+  .home-hero__copy > h1,
+  .about-page__hero > h1 { --entrance-delay: 60ms; }
+
+  .home-intro,
+  .about-page__intro { --entrance-delay: 120ms; }
+
+  .home-actions,
+  .about-page__actions { --entrance-delay: 180ms; }
+
+  /* Preserve the portrait's existing tilt during its entrance. */
+  .home-portrait { --entrance-rotation: 3deg; --entrance-delay: 100ms; }
+
+  .skills > .eyebrow,
+  .skills > h2,
+  .about-page__section-heading,
+  .projects-page .project-card { --entrance-delay: 120ms; }
+
+  .projects-page .project-card + .project-card { --entrance-delay: 260ms; }
+
+  .skill-item,
+  .about-page__entry,
+  .about-page__note,
+  .about-page__education-card { --entrance-delay: 160ms; }
+
+  .skill-item:nth-child(2),
+  .about-page__entry:nth-child(2) { --entrance-delay: 210ms; }
+
+  .skill-item:nth-child(3),
+  .about-page__entry:nth-child(3) { --entrance-delay: 260ms; }
+
+  .skill-item:nth-child(4),
+  .about-page__entry:nth-child(4),
+  .about-page__education-card + .about-page__education-card { --entrance-delay: 310ms; }
+
+  /* Keyboard users can reach controls immediately, even during the entrance. */
+  .home-actions:focus-within,
+  .about-page__actions:focus-within { animation: none; }
+}

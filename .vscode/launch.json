@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Website: Preview inside VS Code",
+      "type": "editor-browser",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "Website: Start local server"
+    },
+    {
+      "name": "Website: Preview existing server",
+      "type": "editor-browser",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}

@@ -1,13 +1,9 @@
-.App {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f0f0f0;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-}
+*, *::before, *::after { box-sizing: border-box; }
+body { padding: 0; margin: 0; }
+.App { width: 100%; min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8f9f5; color: #183c39; }
+.App main { flex: 1; min-width: 0; }
+a { color: inherit; }
+img { max-width: 100%; }
+.primary-link svg, .secondary-link svg { font-size: 20px; flex-shrink: 0; }
+a:focus-visible, button:focus-visible { outline: 3px solid #216b5c; outline-offset: 4px; }
+.App h1, .App h2, .App h3, .App p, .App a { overflow-wrap: anywhere; }

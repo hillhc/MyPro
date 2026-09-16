@@ -18,7 +18,7 @@ function Project() {
           <div>
             <p className="project-meta">MSC INDUSTRY DISSERTATION / JUN 2026 - SEP 2026</p>
             <h2>Computer Vision for Automated Textile Sorting by Colour</h2>
-            <p className="project-supervisor">UCL in partnership with <a href="https://www.zoritex.com/" onClick={(event) => event.stopPropagation()} onKeyDown={(event) => event.stopPropagation()}>Zori Tex</a></p>
+            <p className="project-supervisor">UCL in partnership with <a href="https://www.zoritex.com/" target="_blank" rel="noopener noreferrer" onClick={(event) => event.stopPropagation()} onKeyDown={(event) => event.stopPropagation()}>Zori Tex</a></p>
           </div>
         </AccordionSummary>
         <AccordionDetails id="zoritex-details" className="project-details">
@@ -63,7 +63,7 @@ function Project() {
             </section>
           </div>
           <div className="project-links">
-            <a className="primary-link" href="https://fyp-react-control-panel.pages.dev/">View frontend website <ArrowOutwardIcon aria-hidden="true" /></a>
+            <a className="primary-link" href="https://fyp-react-control-panel.pages.dev/" target="_blank" rel="noopener noreferrer">View frontend website <ArrowOutwardIcon aria-hidden="true" /></a>
           </div>
         </AccordionDetails>
       </Accordion>
